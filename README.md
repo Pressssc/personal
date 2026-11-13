@@ -32,23 +32,28 @@ Para completar la configuración inicial, debo enviar una prueba y confirmar el 
 
 avances del proyecto
 Organice los cambios en estas versiones para contar el proceso de desarrollo. La numeracion corresponde a este resumen del README.
+
 Version 1 — Primera estructura
 - Creé las secciones de presentación, sobre mí, habilidades, proyectos y contacto.
 - Usé Bootstrap para organizar la primera versión.
 - Agregue proyectos de ejemplo y un formulario con envío simulado.
+
 Version 2 — Cambio a Tailwind
 - Reemplace Bootstrap por Tailwind CSS.
 - Organice las tarjetas y secciones con clases sencillas.
 - Ajusté la distribución para celulares y computadores.
+
 Version 3 — Colores y foto
 - Agregue el fondo degradado entre morado y azul.
 - Elegi un fondo blanco para el panel del formulario y azul claro para sus campos.
 - Incorpore mi foto de perfil en un marco circular.
+
 Version 4 — Contenido personal
 - Revise los comentarios del codigo para entenderlos mejor.
 - Reemplace la tarjeta de recetas por ruedaLibre y añadí su repositorio.
 - Agregue mi perfil de GitHub y mi correo de contacto.
 - Dejé las tarjetas del contador de clics y del conversor de temperaturas.
+
 Version 5 — Envío de mensajes
 - Conecté el formulario con FormSubmit.
 - Agregué los nombres de los campos para que se incluyan en el envío.
