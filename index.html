@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mateo Cárdenas | Portafolio</title>
+
+  <!-- tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- enlaces -->
+  <nav class="menu text-white" aria-label="Menú principal">
+    <div class="mx-auto max-w-5xl flex flex-wrap items-center justify-between gap-3 p-4">
+      <a class="text-xl font-semibold" href="#inicio">Portafolio</a>
+      <ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+        <li><a class="hover:underline" href="#sobre-mi">Sobre mí</a></li>
+        <li><a class="hover:underline" href="#habilidades">Habilidades</a></li>
+        <li><a class="hover:underline" href="#proyectos">Proyectos</a></li>
+        <li><a class="hover:underline" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Presentación -->
+    <header class="portada" id="inicio">
+      <div class="mx-auto max-w-5xl grid items-center gap-6 px-4 py-12 text-center md:grid-cols-3 md:text-left">
+        <div class="md:col-span-2">
+          <h1 class="mb-2 text-4xl font-bold md:text-5xl">Mateo Cárdenas</h1>
+          <p class="text-xl">Estoy aprendiendo desarrollo web.</p>
+        </div>
+
+        <img class="foto-perfil mx-auto size-[150px] rounded-full border-4 border-white"
+          src="foto-perfil.jpg" alt="Foto de Mateo Cárdenas" width="150" height="150">
+      </div>
+    </header>
+
+    <div class="mx-auto max-w-5xl grid gap-8 px-4 py-12 md:grid-cols-2">
+      <section id="sobre-mi">
+        <h2 class="mb-3 text-2xl font-bold">Sobre mí</h2>
+        <p>Me interesa la tecnología y me gusta entender cómo funcionan las páginas web. Estoy aprendiendo a programar y practico con proyectos pequeños que me ayudan a entender mejor cada tema.</p>
+      </section>
+
+      <section id="habilidades">
+        <h2 class="mb-3 text-2xl font-bold">Habilidades</h2>
+        <ul class="flex flex-wrap gap-2 text-sm font-semibold">
+          <li class="rounded-full border border-gray-300 bg-white px-3 py-1">HTML</li>
+          <li class="rounded-full border border-gray-300 bg-white px-3 py-1">CSS</li>
+          <li class="rounded-full border border-gray-300 bg-white px-3 py-1">JavaScript básico</li>
+          <li class="rounded-full border border-gray-300 bg-white px-3 py-1">Python</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Proyectos -->
+    <section class="proyectos" id="proyectos">
+      <div class="mx-auto max-w-5xl px-4 py-12">
+        <h2 class="mb-5 text-2xl font-bold">Proyectos</h2>
+        <div class="grid gap-4 md:grid-cols-3">
+          <article class="rounded-lg border border-gray-300 bg-white p-5">
+            <h3 class="mb-2 text-lg font-semibold">ruedaLibre</h3>
+            <p>Proyecto ruedaLibre. Puedes consultar el código en mi repositorio de GitHub.</p>
+            <a class="mt-3 inline-block text-violet-900 underline" href="https://github.com/Pressssc/rueda-libre">Ver en GitHub</a>
+          </article>
+          <article class="rounded-lg border border-gray-300 bg-white p-5">
+            <h3 class="mb-2 text-lg font-semibold">Contador de clics</h3>
+            <p>Un ejercicio en JavaScript con un botón que suma clics y otro que reinicia el conteo.</p>
+          </article>
+          <article class="rounded-lg border border-gray-300 bg-white p-5">
+            <h3 class="mb-2 text-lg font-semibold">Conversor de temperaturas</h3>
+            <p>Un programa en Python que convierte grados Celsius a Fahrenheit desde la terminal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="mx-auto max-w-5xl px-4 py-12" id="contacto">
+      <h2 class="mb-2 text-2xl font-bold">Contacto</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="rounded-lg bg-white p-5 md:col-span-2">
+          <p class="mb-4 text-gray-600">Escríbeme y te responderé a tu correo.</p>
+          <!-- Los campos con required son obligatorios. -->
+          <form action="https://formsubmit.co/correacardenasmateo7@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio">
+            <div class="mb-3">
+              <label class="mb-1 block" for="nombre">Nombre</label>
+              <input class="w-full rounded border border-blue-400 bg-blue-50 px-3 py-2"
+                type="text" id="nombre" name="name" autocomplete="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="mb-1 block" for="correo">Correo</label>
+              <input class="w-full rounded border border-blue-400 bg-blue-50 px-3 py-2"
+                type="email" id="correo" name="email" autocomplete="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="mb-1 block" for="mensaje">Mensaje</label>
+              <textarea class="w-full rounded border border-blue-400 bg-blue-50 px-3 py-2"
+                id="mensaje" name="message" rows="4" required></textarea>
+            </div>
+            <button class="cursor-pointer rounded bg-violet-900 px-4 py-2 text-white" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold">Enlaces</h3>
+          <p class="mb-3"><a class="break-all underline" href="mailto:correacardenasmateo7@gmail.com">correacardenasmateo7@gmail.com</a></p>
+          <ul class="flex flex-wrap gap-4">
+            <li><a class="underline" href="https://github.com/Pressssc">GitHub</a></li>
+            <li><a class="underline" href="https://www.linkedin.com/">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

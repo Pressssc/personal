@@ -1,0 +1,28 @@
+/* degradado */
+body {
+  background-color: #d8b4fe;
+  background-image: linear-gradient(to right, #d8b4fe, #93c5fd);
+  color: #241638;
+}
+
+/* fondo morado oscuro */
+.menu {
+  background-color: #2e1065;
+}
+
+/* capa blanca */
+.portada,
+.proyectos {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+
+/* pa q la foto no se deforme en el circulo. */
+.foto-perfil {
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+/* color para los enlaces de contacto. */
+#contacto a {
+  color: #312e81;
+}
